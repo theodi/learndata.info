@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: ODI Learning
+email: training@theodi.org 
+description: "Giving people the skills to innovate with data"
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://learndata.info" # the base hostname & protocol for your site
+
+# Social media profiles - feel free to add more here
+twitter_username: odihq
+github_username:  theodi
+facebook_username: OpenDataInstitute
+
+# Address information
+address_street: 65 Clifton Street
+address_city: London
+address_state: 
+address_zip: EC2A 5JE
+
+# Build settings
+markdown: kramdown

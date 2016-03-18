@@ -1,0 +1,18 @@
+.navbar-default {
+	background-color: black;
+}
+footer .footer-above {
+	background-color: black;
+}
+header {
+	background-color: #05d2aa;
+}
+a {
+	color: #05d2aa;
+}
+a, a:hover, a:focus, a:active, a.active {
+	color: #05d2aa;
+}
+.img-responsive {
+	max-width: 60%;
+}
