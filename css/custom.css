@@ -1,0 +1,47 @@
+.practitioner {
+	border-bottom: 7px solid #ef3aab;
+}
+.explorer {
+	border-bottom: 7px solid #18BC9C;
+}
+.strategist {
+	border-bottom: 7px solid #ef3aab;
+}
+.pioneer {
+	border-bottom: 7px solid #ff6700;	
+}
+.other {
+	border-bottom: 7px solid black;
+}
+.couress_overview_content {
+	display: none;
+}
+.courses_description {
+	display: none;
+}
+.courses_details_thumb {
+	display: none;
+}
+.courses_description_content ul {
+	margin-left: 20px;
+}
+.courses_description_content li {
+	list-style: initial;
+}
+.courses_description_content #instances {
+	display: none;
+}
+.courses_description_content h3 {
+	margin: 1em;
+}
+.courses_description_content h3 {	
+    background-color: #f9f9f9;
+    border-left: 10px solid #f39c12;
+    padding: 20px 0 20px 30px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 
+}
