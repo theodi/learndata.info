@@ -92,6 +92,7 @@ function processCourse(course,instances) {
     console.log(title);
     link = course["web_url"];
     subtitle = course.details["excerpt"];
+    coursename = course["slug"];
     if (subtitle.length > 140) {
         subtitle = subtitle.substring(0,140);
         subtitle = subtitle.substring(0,subtitle.lastIndexOf(' '));
@@ -117,7 +118,7 @@ function processCourse(course,instances) {
     block += '                <div class="single_courses_desc">';
     block += '                    <!-- Single Courses Title Area End -->';
     block += '                    <div class="title">';
-    block += '                        <a href="#"><h5>'+title+'</h5></a>';
+    block += '                        <a href="view-course.html#'+coursename+'"><h5>'+title+'</h5></a>';
     block += '                        <p>'+subtitle+'</p>';
     block += '                        <p><i class="fa fa-user" aria-hidden="true"></i> '+level+'</p>';
     block += '                    </div>';
