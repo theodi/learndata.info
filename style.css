@@ -1040,7 +1040,7 @@
     ================================ */
     
     .cool_facts_area {
-        background-image: url(img/cool-facts/bg_photo.jpg);
+        //background-image: url(img/cool-facts/bg_photo.jpg);
         background-size: cover;
         position: relative;
         z-index: 1;
