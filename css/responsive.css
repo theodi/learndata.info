@@ -373,10 +373,17 @@
         float: none;
     }
     .breadcumb_area {
-        height: 200px;
+        height: 100px;
     }
     .breadcumb_section {
         height: auto;
+    }
+    .page_title {
+        margin-top: -10px;
+    }
+    .page_pagination {
+        right: -50px;
+        margin-top: 45px;
     }
     .page_title {
         display: none;

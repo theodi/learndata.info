@@ -45,3 +45,9 @@
     font-size: 14px;
     padding-top: 
 }
+.single_teacher_details_info {
+	height: 100px;
+}
+.breadcumb_area {
+	background-position-y: bottom;
+}
