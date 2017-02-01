@@ -1,0 +1,19 @@
+associates = [
+      { 'name': 'olivia-burman', 'specialism': 'Digital engagement' },
+      { 'name': 'wendy-carrara', 'specialism': 'Digital transformation and innovation' },
+      { 'name': 'elisabeth-fischer', 'specialism': 'Agricultural economics, rural development and sustainability' },
+      { 'name': 'paul-connell', 'specialism': 'Innovation, business strategy and smart urban futures' },
+      { 'name': 'elena-simperl', 'specialism': 'Linked data, data science and social computing' },
+      { 'name': 'damien-mcCloud', 'specialism': 'Geographic data systems' },
+      { 'name': 'jesse-romine', 'specialism': 'Government programme enablement and procurement' },
+      { 'name': 'luciana-sodr&#233;-Costa', 'specialism': 'Data business models' },
+      { 'name': 'enrique-zapata-P&#233;rez', 'specialism': 'Government data strategy' },
+      { 'name': 'sander-janssen', 'specialism': 'Earth observation and environmental data' },
+      { 'name': 'francesca-de-chiara', 'specialism': 'Government data' },
+      { 'name': "kieron-o'Hara", 'specialism': 'Privacy and open government' },
+      { 'name': 'katherine-rooney', 'specialism': 'Transport data' },
+      { 'name': 'andrew-sage', 'specialism': 'Visualisation, open data consumption and technical development' },
+      { 'name': 'mark-harvey', 'specialism': 'Open data and the environment'},       
+      { 'name': 'andrew-mackenzie', 'specialism': 'Open data, sustainable city design and low carbon innovation' },
+      { 'name': 'beata-rutabingwa', 'specialism': 'Geographic open data impact' }
+];

@@ -5,11 +5,56 @@
 
   <body id="page-top" class="index">
 
-    {% include navbar.html %}
+  <!-- preloader start -->
+  <div id="preloader"></div>
+  <!-- /.end preloader -->
 
-    {% include header.html %}
+  <header class="header_area">
 
-    {% include footer.html %}
+	{% include header.html %}
+
+	{% include navbar.html %}
+
+  </header>
+    {{ content }}
+
+	{% include footer.html %}
+  <!-- ===================== All jQuery Plugins ===================== -->
+
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Nivoslider js -->
+	<script src="js/jquery.nivoslider.js"></script>
+	<script src="js/nivoslider-active.js"></script>
+
+	<!-- owl-carousel js -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- Ajax Contact js -->
+	<script src="js/ajax-contact.js"></script>
+
+	<!-- Coundown js -->
+	<script src="js/coundown-timer.js"></script>
+
+	<!-- Meanmenu js -->
+	<script src="js/meanmenu.js"></script>
+
+	<!-- Magnific Popup js -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
+	<!-- Counterup and Waypoint js -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/counterup.min.js"></script>
+
+	<!-- back to top js -->
+	<script src="js/jquery.scrollUp.js"></script>
+
+	<!-- wow js -->
+	<script src="js/wow.min.js"></script>
+
+	<!-- script js -->
+	<script src="js/custom.js"></script>
 
   </body>
 
