@@ -1,0 +1,421 @@
+[
+  {
+    "_graphic": {
+      "alt": "",
+      "src": "course/en/assets/94164aeed2f6885fcdf44f9fe5484855c5238353.jpg"
+    },
+    "_id": "5886263fb61c46e176e7e653",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "What is open data?",
+    "title": "What is open data?",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Define open data",
+          "credits": 5,
+          "level": "explorer"
+        },
+        {
+          "outcome": "Explain the need for open data",
+          "credits": 5,
+          "level": "explorer"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": "course/en/assets/1fc73255e55ba04b56c12fcf0dda29d60db46b4d.jpg"
+    },
+    "_id": "5889d951b61c46e176e7e857",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Unlocking value from open data",
+    "title": "Unlocking value from open data",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Describe the benefits of working with open data",
+          "credits": 5,
+          "level": "explorer"
+        },
+        {
+          "outcome": "Describe successful case studies of using and publishing open data",
+          "credits": 5,
+          "level": "explorer"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": "course/en/assets/a699447adb040b8b78c36f46d46356ba124debf3.png"
+    },
+    "_id": "5889e11ab61c46e176e7e881",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Open data: agent of change",
+    "title": "Open data: agent of change",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Describe the importance of organisational change to an open data iniative",
+          "credits": 5,
+          "level": "explorer"
+        },
+        {
+          "outcome": "Define key aspects of open data leadership",
+          "credits": 5,
+          "level": "explorer"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "588a2d9ab61c46e176e7e913",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Why do we need to license?",
+    "title": "Why do we need to license?",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Describe how copyright and licensing relate to open data",
+          "credits": 5,
+          "level": "explorer"
+        },
+        {
+          "outcome": "Identify instances of open licenses and effective application",
+          "credits": 5,
+          "level": "explorer"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": "course/en/assets/b0a1356f5ad57eff61e6a22b69a2e1b6d9773220.jpg"
+    },
+    "_id": "588f2e4fb61c46e176e7ea6f",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "What makes quality open data",
+    "title": "What makes quality open data",
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Define the benefits of quality open data",
+          "credits": 5,
+          "level": "explorer"
+        },
+        {
+          "outcome": "Describe two guidelines for open data quality",
+          "credits": 5,
+          "level": "explorer"
+        }
+      ]
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "588f3feeb61c46e176e7eaa9",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Measuring success for open data ",
+    "title": "Measuring success for open data ",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Evaluate the success of open data projects and communities",
+          "credits": 10,
+          "level": "strategist"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "588f5556b61c46e176e7eae6",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Why should we worry about sustainability?",
+    "title": "Why should we worry about sustainability?",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Describe key success factors for open data sustainability",
+          "credits": 5,
+          "level": "strategist"
+        },
+        {
+          "outcome": "Evaluate sustainability for an open dataset",
+          "credits": 10,
+          "level": "strategist"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "58905843b61c46e176e7eb2a",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Getting to grips with platforms",
+    "title": "Getting to grips with platforms",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "List a number of open data platforms to explore data",
+          "credits": 5,
+          "level": "practitioner"
+        },
+        {
+          "outcome": "Examine the benefits and drawbacks of publishing data on different open data platforms",
+          "credits": 10,
+          "level": "practitioner"
+        }
+      ]
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": "course/en/assets/3870d2023395291d5f1bd5c0837f8178067fd665.jpg"
+    },
+    "_id": "589068f1b61c46e176e7eb67",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Choosing the right format for open data",
+    "title": "Choosing the right format for open data",
+    "_skillsFramework": {
+      "_skills": [
+        {
+          "outcome": "Identify characteristics of different data formats",
+          "credits": 10,
+          "level": "practitioner"
+        },
+        {
+          "outcome": "List criteria for choosing the right data format",
+          "credits": 5,
+          "level": "practitioner"
+        }
+      ]
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "5891cdfbb61c46e176e7f033",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "How useful is my data?",
+    "title": "How useful is my data?",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": []
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "589215ccb61c46e176e7f092",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "How to clean your data",
+    "title": "How to clean your data",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": []
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "589485f2fda9f5660ad841f2",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Finding hidden data on the Web",
+    "title": "Finding hidden data on the Web",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": []
+    }
+  },
+  {
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_id": "589495a8fda9f5660ad84242",
+    "_parentId": "course",
+    "_type": "page",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "Linking up the web of data",
+    "title": "Linking up the web of data",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    },
+    "_skillsFramework": {
+      "_skills": []
+    }
+  }
+]

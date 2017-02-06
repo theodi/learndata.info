@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+    <!-- Breadcumb area start -->
+    <section class="breadcumb_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="breadcumb_section">
+                        <!-- Breadcumb page title start -->
+                        <div class="page_title">
+                            <h3>Open data essentials</h3>
+                        </div>
+                        <!-- Breadcumb page pagination start -->
+                        <div class="page_pagination">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="course-list.html">eLearning</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="course-title">Open data essentials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcumb area end -->
+
+
+<section class="popular_coureses_area all_courses grid_list section_padding_100">
+    <div class="container">
+        <div class="row" id="odicourses">
+
+
+<div class="col-xs-12">
+     <div class="single_courses course-list">
+         <div class="single_courses_thumb">
+              <img src="img/course-img/open_data_essentials.jpg" alt="">
+                 <div class="hover_overlay">
+                     <div class="links">
+                         <a class="magnific-popup" href="img/course-img/open_data_essentials.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </div>
+                 </div>
+             </div>
+             <!-- Single Courses Image Area End -->
+             <div class="single_courses_desc">
+                 <!-- Single Courses Title Area End -->
+                 <div class="title">
+                     <a href="view-course.html#'+coursename+'"><h5>Open data essentials</h5></a>
+                     <p>Welcome to the Open Data Institute's e-Learning programme.</p>
+                     <p>This programme has been designed to enable you to discover what open data is and how it is changing the lives of everyone on our planet.elds can learn from each other, in order to find and tell compelling stories with data.</p><br/>&nbsp;<br/>&nbsp;<br/>
+                     <p><i class="fa fa-user" aria-hidden="true"></i>Beginner</p>
+                 </div>
+                 <!-- Single Courses Blog Title Area End -->
+                 <div class="'+framework+' price_rating_area">
+                     <div class="price">
+                         <span>£Free</span>
+                     </div>
+                     <div class="seat">
+                        <a href="https://accelerate.theodi.org" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Start course</a>
+                        <!--<i class="fa fa-users" aria-hidden="true"><span>16</span></i>-->
+                     </div>
+                 </div>
+             </div>
+         </div>
+     
+        </div>
+    </div>
+    </div>
+</section>
+<script>
+$( document ).ready(function() {
+    $.getJSON( "data/essentials.json", function( data ) {
+        for(i=0;i<data.length;i++) {
+            block = '<div class="price_rating_area" style="position: relative; top: -24px;';
+            if (i % 2 > 0) { block += 'background-color: white;'; }
+            block += '"><div class="price">';
+            block += '<span>'+data[i]["title"]+'</span>';
+            block += '</div>';
+            block += '<div class="seat">';
+            block += '<a href="https://accelerate.theodi.org.info/#/id/'+data[i]["_id"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Go to module</a>';
+            block += '</div></div>';
+            $('.course-list').append(block);
+        }
+    });
+});
+</script>
