@@ -107,10 +107,10 @@ function processCourse(course,instances) {
     block += '    <div class="col-xs-12">';
     block += '        <div class="single_courses course-list">';
     block += '            <div class="single_courses_thumb">';
-    block += '                 <img src="img/course-img/odi_course_default.jpg" alt="">';
+    block += '                 <img src="../img/course-img/odi_course_default.jpg" alt="">';
     block += '                    <div class="hover_overlay">';
     block += '                        <div class="links">';
-    block += '                            <a class="magnific-popup" href="img/course-img/softwareengineer.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>';
+    block += '                            <a class="magnific-popup" href="../img/course-img/softwareengineer.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>';
     block += '                        </div>';
     block += '                    </div>';
     block += '                </div>';

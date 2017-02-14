@@ -24,7 +24,7 @@ function renderMenu(courses) {
         coursename = course["slug"];
         title = course["title"];
         if (!done[coursename]) {
-            list += '<li><a href="view-course.html#'+coursename+'">'+title+'</a></li>';
+            list += '<li><a href="/courses/view-course.html#'+coursename+'">'+title+'</a></li>';
             done[coursename] = true;
         }
     }

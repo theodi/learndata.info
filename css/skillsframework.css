@@ -1,0 +1,132 @@
+.hex2 {
+  width: 100px;
+  height: 100px;
+}
+.intro {
+  //background-color: #91dfff; 
+  background-color: #00b6ff; 
+}
+.management {
+  //background-color: #ec8989;
+  background-color: #e6007c;
+}
+.publishing {
+  //background-color: #9ee4af;
+  background-color: #0dbc37;
+}
+.storytelling {
+  background-color: #dfaad4;
+}
+.business {
+  //background-color: #ffc8a3;
+  background-color: #ff6700;
+}
+.leadership {
+  //background-color: #d5d5d5;
+  background-color: #f9bc26;
+}
+.analysis {
+  //background-color: #f6a1ce;
+  background-color: #722ea5;
+}
+.hexagon-wrapper {
+  text-align: center;
+  margin: -7px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+.even {
+    display: inline-block;
+    top: 52px;
+}
+#hex_row {
+  margin-top: 7px;
+  margin-left: 10px;
+}
+.no {
+  opacity: 0;
+}
+.hex3 {
+  width: 40px;
+  height: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.hex3 h4 {
+  font-size:0.9em;
+  position: absolute;
+  z-index: 2000;
+  top: 110%;
+  width: 80px;
+  font-weight: lighter;
+  left: -20px;
+}
+.hex2 h4 {
+  font-size:0.85em;
+  position: absolute;
+  z-index: 2000;
+  top: 55%;
+  width: 100px;
+  font-weight: lighter;
+  left: 0px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.hex2 img {
+  position: absolute;
+  z-index: 2000;
+  top: 6%;
+  height: 44px;
+  left: 25%;
+}
+#hex_container {
+  width: 680px;
+  margin-left: 34px;
+}
+#hex_key {
+  text-align: center;
+  width: 100%;
+  top: -30px;
+  position: relative;
+}
+#details_box {
+    display: inline-block;
+    top: 370px;
+    position: absolute;
+    left: 60%;
+    background-color: #aaa;
+    padding: 12px;
+    line-height: 1.5em;
+    min-width: 320px;
+}
+.course_filter {
+  text-decoration: underline;
+  cursor: pointer;
+}

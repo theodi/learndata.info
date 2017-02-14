@@ -1,7 +1,7 @@
 ---
 layout: default
+page.url: /elearning/open_data_essentials.html
 ---
-
     <!-- Breadcumb area start -->
     <section class="breadcumb_area">
         <div class="container">
@@ -38,10 +38,10 @@ layout: default
 <div class="col-xs-12">
      <div class="single_courses course-list">
          <div class="single_courses_thumb">
-              <img src="img/course-img/open_data_essentials.jpg" alt="">
+              <img src="../img/course-img/open_data_essentials.jpg" alt="">
                  <div class="hover_overlay">
                      <div class="links">
-                         <a class="magnific-popup" href="img/course-img/open_data_essentials.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
+                         <a class="magnific-popup" href="../img/course-img/open_data_essentials.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>
                      </div>
                  </div>
              </div>
@@ -73,7 +73,7 @@ layout: default
 </section>
 <script>
 $( document ).ready(function() {
-    $.getJSON( "data/essentials.json", function( data ) {
+    $.getJSON( "../data/essentials.json", function( data ) {
         for(i=0;i<data.length;i++) {
             block = '<div class="price_rating_area" style="position: relative; top: -24px;';
             if (i % 2 > 0) { block += 'background-color: white;'; }

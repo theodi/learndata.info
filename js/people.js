@@ -1,6 +1,6 @@
 function getPeople(type,destination) {
         console.log("In here");
-        $.getJSON( "team/training_team.json", function( data ) {
+        $.getJSON( "../team/training_team.json", function( data ) {
             people = data[type];
             for (r=0;r<people.length;r++) {
                 person = people[r];
