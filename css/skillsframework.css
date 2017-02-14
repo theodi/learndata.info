@@ -125,6 +125,10 @@
     padding: 12px;
     line-height: 1.5em;
     min-width: 320px;
+    font-size: 1em;
+}
+#details_box h3 {
+  padding-top: 10px;
 }
 .course_filter {
   text-decoration: underline;
