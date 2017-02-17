@@ -95,28 +95,13 @@ Date.prototype.format = function (mask) {
     });
 };
 
-function getNews() {
-        console.log("In News");
-        $.getJSON( "http://contentapi.theodi.org/with_tag.json?article=news", function( data ) {
-             news = data.results;
-             news.sort(function(a,b) {
-                return new Date(b.created_at) - new Date(a.created_at);
-             });
-             console.log(news);
-        })
-        .error(function() {
-            console.log("error");
-        });
-}
-
 function getEvents(location,amount) {
-        console.log("In News");
         $.getJSON( "https://odi-courses-data.herokuapp.com/getEvents.php", function( data ) {
              news = data.results;
              news.sort(function(a,b) {
-                return new Date(a.details.start_date) - new Date(b.details.start_date);
+                return new Date(a.details.date) - new Date(b.details.date);
              });
-             for(i=0;i<=amount;i++) {
+             for(i=0;i<amount;i++) {
                 renderItem(news[i],location);
                 renderFooter(news[i],"events_footer");
              }
@@ -124,6 +109,53 @@ function getEvents(location,amount) {
         .error(function() {
             console.log("error");
         });
+}
+
+function getNews(location,amount) {
+        $.getJSON( "https://odi-courses-data.herokuapp.com/getNews.php", function( data ) {
+             news = data.results;
+             //news.sort(function(a,b) {
+             //   return new Date(a.created_at) - new Date(b.created_at);
+             //});
+             for(i=0;i<amount;i++) {
+                renderNewsItem(news[i],location);
+             }
+        })
+        .error(function() {
+            console.log("error");
+        });
+}
+
+function renderNewsItem(item,location) {
+    datetime = new Date(item.created_at);
+    desc = item.details.content;
+    image = desc;
+    if (image.indexOf('src="') > 0) {
+        image = image.substring(image.indexOf('src="')+5,image.length);
+        image = image.substring(0,image.indexOf('"'));
+    } else {
+        image = "/img/news-img/default.png";
+    }
+    html = '<div class="col-md-4 col-xs-12">';
+        html += '<div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.2s">';
+            html += '<div class="single_latest_news_img_area">';
+                html += '<img src="'+image+'" alt="">';
+                    html += '<div class="published_date">';
+                        html += '<p class="date">'+datetime.format('dd')+'</p>';
+                        html += '<p class="month">'+datetime.format('mmm')+'</p>';
+                html += '</div>';
+            html += '</div>';
+            html += '<div class="single_latest_news_text_area">';
+                html += '<div class="news_title">';
+                    html += '<a href="'+item.web_url+'" target="_blank"><h4>'+item.title+'</h4></a>';
+                html += '</div>';
+                html += '<div class="news_content">';
+                    html += '<p>'+item.details.excerpt+'</p>';
+                html += '</div>';
+            html += '</div>';
+        html += '</div>';
+    html += '</div>';
+    $("#" + location).append(html);
 }
 
 function renderFooter(item,location) {
@@ -144,8 +176,9 @@ function renderFooter(item,location) {
 }
 
 function renderItem(item,location) {
-    datetime = new Date(item.details.start_date);
+    datetime = new Date(item.details.date);
     if (item.details.event_type == "event:lunchtime-lecture") {
+        course = "blank";
         desc = item.details.description;
         image = desc;
         image = image.substring(image.indexOf('src="')+5,image.length);
@@ -155,19 +188,41 @@ function renderItem(item,location) {
         price = "Free";
         url = item.details.booking_url;
     }
+    if (item.format == "course_instance") {
+        course = item.details.course;
+        desc = "";
+        image = "img/course-img/odi_course_default.jpg";
+        $.getJSON('http://contentapi.theodi.org/'+item.details.course+'.json', function(coursedata) {
+            desc = coursedata.details.excerpt;
+            $('.desc_'+item.details.course).each(function(i, obj) {
+                $(obj).html(desc);
+            });
+            image = coursedata.details.description;
+            image = image.substring(image.indexOf('src="')+5,image.length);
+            image = image.substring(0,image.indexOf('"'));
+            $('.img_'+item.details.course).each(function(i, obj) {
+                $(obj).attr("src",image);
+            });
+            $('.imagelink_'+item.details.course).each(function(i, obj) {
+                $(obj).attr("html",image);
+            });
+        });
+        price = item.details.price;
+        url = item.details.url;
+    }
     html = '<div class="col-md-4 col-xs-12">';
          html += '<div class="single_courses">';
             html += '<div class="single_courses_thumb">';
-                html += '<img src="'+image+'" alt="" style="height: 200px;">';
+                html += '<img class="img_'+course+'" src="'+image+'" alt="" style="height: 200px;">';
                 html += '<div class="hover_overlay">';
                     html += '<div class="links">';
-                        html += '<a class="magnific-popup" href="'+image+'"><i class="fa fa-search" aria-hidden="true"></i></a>';
+                        html += '<a class="magnific-popup imglink_'+course+'" href="'+image+'"><i class="fa fa-search" aria-hidden="true"></i></a>';
                     html += '</div>';
                 html += '</div>';
             html += '</div>';
             html += '<div class="single_courses_desc">';
                 html += '<div class="title">';
-                    html += '<a href="#"><h5>' + item.title + '</h5></a>';
+                    html += '<a href="'+item.web_url+'" target="_blank"><h5>' + item.title + '</h5></a>';
                     html += '<div class="date_time">';
                         html += '<div class="date">';
                             html += '<p><span class="icon-calendar"></span>&nbsp;'+datetime.format('dS mmmm yyyy')+'</p>';
@@ -176,7 +231,7 @@ function renderItem(item,location) {
                             html += '<p><span class="icon-clock"></span>&nbsp;'+datetime.format('HH:MM')+'</p>';
                         html += '</div>';
                     html += '</div>';
-                    html += '<p>'+desc+'</p>';
+                    html += '<p class="desc_'+course+'">'+desc+'</p>';
                 html += '</div>';
                 html += '<div class="price_rating_area">';
                     html += '<div class="price">';
@@ -192,11 +247,3 @@ function renderItem(item,location) {
     html += '</div>';
     $("#" + location).append(html);
 }
-
-$( document ).ready(function() {
-    getNews();
-});
-
-$( document ).ready(function() {
-    getEvents("events_home",3);
-});

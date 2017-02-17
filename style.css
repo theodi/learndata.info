@@ -3652,6 +3652,9 @@
     .popular_coureses_area.home2 .price_rating_area {
         border-bottom: 10px solid #18BC9C;
         padding: 15px 30px 0;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
     }
     /*    Why Choose Us Area CSS */
     
@@ -3828,6 +3831,7 @@
     .popular_coureses_area.home2.event-grid .single_courses_desc,
     .popular_coureses_area.home2.event-list .single_courses_desc {
         border: 1px solid #f6f6f6;
+        min-height: 360px;
         margin-bottom: 50px;
     }
     

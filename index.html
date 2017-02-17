@@ -208,86 +208,19 @@ A tailored set of masterclasses and remote mentoring helped the Mexican Governme
                     </div>
                 </div>
             </div>
-            <div class="row">
-
-                <!-- single latest news area start -->
-                <div class="col-md-4 col-xs-12">
-                    <div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- single latest news thumb -->
-                        <div class="single_latest_news_img_area">
-                            <img src="img/news-img/blog.jpg" alt="">
-                            <!-- single latest news published date -->
-                            <div class="published_date">
-                                <p class="date">01</p>
-                                <p class="month">Aug</p>
-                            </div>
-                        </div>
-                        <div class="single_latest_news_text_area">
-                            <!-- single latest news title -->
-                            <div class="news_title">
-                                <a href="#"><h4>Improve Your Computer Skills, Sign Up For Free Online Courses</h4></a>
-                            </div>
-                            <!-- single latest news excerp -->
-                            <div class="news_content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae? Impedit pariatur molestiae officia saepe atque. Illum quos maxime maiores, inventore eveniet? Iure, fuga quis. Magni.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single latest news area start -->
-                <div class="col-md-4 col-xs-12">
-                    <div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- single latest news thumb -->
-                        <div class="single_latest_news_img_area">
-                            <img src="img/news-img/blog-2.jpg" alt="">
-                            <!-- single latest news published date -->
-                            <div class="published_date">
-                                <p class="date">22</p>
-                                <p class="month">Dec</p>
-                            </div>
-                        </div>
-                        <div class="single_latest_news_text_area">
-                            <!-- single latest news title -->
-                            <div class="news_title">
-                                <a href="#"><h4>Education is not preparation for life; education is life itself.</h4></a>
-                            </div>
-                            <!-- single latest news excerp -->
-                            <div class="news_content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae? Impedit pariatur molestiae officia saepe atque. Illum quos maxime maiores, inventore eveniet? Iure, fuga quis. Magni.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single latest news area start -->
-                <div class="col-md-4 col-xs-12">
-                    <div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.6s">
-                        <!-- single latest news thumb -->
-                        <div class="single_latest_news_img_area">
-                            <img src="img/news-img/blog-3.jpg" alt="">
-                            <!-- single latest news published date -->
-                            <div class="published_date">
-                                <p class="date">13</p>
-                                <p class="month">Feb</p>
-                            </div>
-                        </div>
-                        <div class="single_latest_news_text_area">
-                            <!-- single latest news title -->
-                            <div class="news_title">
-                                <a href="#"><h4>Education is the key to unlock the golden door of freedom.</h4></a>
-                            </div>
-                            <!-- single latest news excerp -->
-                            <div class="news_content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae? Impedit pariatur molestiae officia saepe atque. Illum quos maxime maiores, inventore eveniet? Iure, fuga quis. Magni.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row" id="news_home">
             </div>
             <!-- end. row -->
         </div>
         <!-- end. container -->
     </section>
+    <script>
+    $( document ).ready(function() {
+        getNews('news_home',3);
+    });
+
+    $( document ).ready(function() {
+        getEvents("events_home",3);
+    });
+    </script>
     <!-- ===================== Blog Area End ===================== -->
