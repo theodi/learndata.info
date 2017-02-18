@@ -143,6 +143,21 @@ function renderGenericItem(item,location) {
     datetime = new Date(item.created_at);
     desc = item.details.content;
     image = desc;
+    excerpt = item.details.excerpt;
+    if (excerpt == "") {
+        excerpt = item.details.description;
+        if (excerpt.indexOf('<p>') > 0) {
+            excerpt = excerpt.split('<p>')[4];
+            excerpt = excerpt.split('</p>')[0];
+        }
+    }
+    if (excerpt.split(' ').length < 4) {
+        excerpt = item.details.content;
+        if (excerpt.indexOf('<p>') > 0) {
+            excerpt = excerpt.split('<p>')[1];
+            excerpt = excerpt.split('</p>')[0];
+        }
+    }
     if (image.indexOf('src="') > 0) {
         image = image.substring(image.indexOf('src="')+5,image.length);
         image = image.substring(0,image.indexOf('"'));
@@ -159,7 +174,7 @@ function renderGenericItem(item,location) {
                     html += '<a href="'+item.web_url+'" target="_blank"><h4>'+item.title+'</h4></a>';
                 html += '</div>';
                 html += '<div class="news_content">';
-                    html += '<p>'+item.details.excerpt+'</p>';
+                    html += '<p>'+excerpt+'</p>';
                 html += '</div>';
             html += '</div>';
         html += '</div>';
