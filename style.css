@@ -1320,6 +1320,7 @@
         box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
+        margin-bottom: 20px;
     }
     
     .single_latest_news_area:hover {
@@ -1330,12 +1331,18 @@
         position: relative;
         width: 100%;
         z-index: 1;
+        min-height: 200px;
     }
     
     .single_latest_news_img_area img {
         width: 100%;
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
+        max-height: 200px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
     }
     
     .single_latest_news_area:hover img {
@@ -1376,6 +1383,9 @@
     .single_latest_news_text_area {
         padding: 30px 20px 10px 20px;
         width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+        overflow-y: hidden;
     }
     
     .single_latest_news_text_area .news_title h4 {

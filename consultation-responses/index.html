@@ -1,0 +1,40 @@
+---
+layout: default
+page.url: /guides/
+---
+<!-- Breadcumb area start -->
+    <section class="breadcumb_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="breadcumb_section">
+                        <!-- Breadcumb page title start -->
+                        <div class="page_title">
+                            <h3>Consultation responses</h3>
+                        </div>
+                        <!-- Breadcumb page pagination start -->
+                        <div class="page_pagination">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li>Consultation responses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcumb area end -->
+<!-- ===================== Popular Courses Area Start ===================== -->
+    <section class="popular_coureses_area home2 event-grid grid_coundown section_padding_100">
+        <div class="container">
+            <div class="row" id="responses">
+            </div>
+        </div>
+    </section>
+    <script>
+        $( document ).ready(function() {
+            getCollection("consultation-responses","responses",10000);
+        });
+    </script>

@@ -95,6 +95,18 @@ Date.prototype.format = function (mask) {
     });
 };
 
+function getCollection(collection,location,amount) {
+    $.getJSON( "https://odi-courses-data.herokuapp.com/getCollection.php?collection="+collection, function( data ) {
+             items = data.results;
+             for(i=0;i<amount;i++) {
+                renderGenericItem(items[i],location);
+             }
+        })
+        .error(function() {
+            console.log("error");
+        });
+}
+
 function getEvents(location,amount) {
         $.getJSON( "https://odi-courses-data.herokuapp.com/getEvents.php", function( data ) {
              news = data.results;
@@ -126,6 +138,35 @@ function getNews(location,amount) {
         });
 }
 
+function renderGenericItem(item,location) {
+    console.log(item);
+    datetime = new Date(item.created_at);
+    desc = item.details.content;
+    image = desc;
+    if (image.indexOf('src="') > 0) {
+        image = image.substring(image.indexOf('src="')+5,image.length);
+        image = image.substring(0,image.indexOf('"'));
+    } else {
+        image = "/img/guides-default.png";
+    }
+    html = '<div class="col-md-4 col-xs-12">';
+        html += '<div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.2s">';
+            html += '<div class="single_latest_news_img_area">';
+                html += '<img src="'+image+'" alt="" onerror="this.src=\'/img/guides-default.png\'">';
+            html += '</div>';
+            html += '<div class="single_latest_news_text_area">';
+                html += '<div class="news_title">';
+                    html += '<a href="'+item.web_url+'" target="_blank"><h4>'+item.title+'</h4></a>';
+                html += '</div>';
+                html += '<div class="news_content">';
+                    html += '<p>'+item.details.excerpt+'</p>';
+                html += '</div>';
+            html += '</div>';
+        html += '</div>';
+    html += '</div>';
+    $("#" + location).append(html);
+}
+
 function renderNewsItem(item,location) {
     datetime = new Date(item.created_at);
     desc = item.details.content;
@@ -139,7 +180,7 @@ function renderNewsItem(item,location) {
     html = '<div class="col-md-4 col-xs-12">';
         html += '<div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.2s">';
             html += '<div class="single_latest_news_img_area">';
-                html += '<img src="'+image+'" alt="">';
+                html += '<img src="'+image+'" alt="" onerror="this.src=\'/img/news-img/default.png\'">';
                     html += '<div class="published_date">';
                         html += '<p class="date">'+datetime.format('dd')+'</p>';
                         html += '<p class="month">'+datetime.format('mmm')+'</p>';
