@@ -107,6 +107,21 @@ function getCollection(collection,location,amount) {
         });
 }
 
+function getLocalData(collection,location,amount) {
+    console.log(collection);
+    $.getJSON( "../data/" + collection + ".json", function( data ) {
+        items = data.results;
+        console.log(items.length);
+        for(i=0;i<items.length;i++) {
+            renderLocalItem(items[i],location);
+        }
+    })
+   .error(function(jqXHR, textStatus, errorThrown) {
+        console.log("error " + textStatus);
+        console.log("incoming Text " + jqXHR.responseText);
+    })
+}
+
 function getEvents(location,amount) {
         $.getJSON( "https://odi-courses-data.herokuapp.com/getEvents.php", function( data ) {
              news = data.results;
@@ -138,8 +153,36 @@ function getNews(location,amount) {
         });
 }
 
-function renderGenericItem(item,location) {
+function renderLocalItem(item,location) {
     console.log(item);
+    html = '<div class="col-md-4 col-xs-12">';
+        html += '<div class="single_latest_news_area wow fadeInUp" data-wow-delay="0.2s">';
+            html += '<div class="single_latest_news_img_area">';
+                html += '<img src="'+item.image+'" alt="" onerror="this.src=\'/img/guides-default.png\'">';
+            html += '</div>';
+            html += '<div class="single_latest_news_text_area" style="min-height: 500px;">';
+                html += '<div class="news_title">';
+                    html += '<h4>'+item.Title+'</h4></a>';
+                html += '</div>';
+                html += '<div class="news_content">';
+                    html += '<p>'+item.Excerpt+'</p>';
+                    links = false;
+                    for(l=0;l<item.links.length;l++) {
+                        links = true;
+                        link = item.links[l];
+                        html += ' <a href="'+link.url+'" target="_blank">' + link.title +'</a> |';
+                    }
+                    if (links) {
+                        html = html.substring(0,html.length-1);
+                    }
+                html += '</div>';
+            html += '</div>';
+        html += '</div>';
+    html += '</div>';
+    $("#" + location).append(html);
+}
+
+function renderGenericItem(item,location) {
     datetime = new Date(item.created_at);
     desc = item.details.content;
     image = desc;

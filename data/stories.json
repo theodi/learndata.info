@@ -1,0 +1,198 @@
+{ "results" : [
+  {
+    "Title": "Delivering a successful transition to democracy in Burkina Faso",
+    "Excerpt": "Results of the west African country’s presidential election were openly available in real time, fostering confidence in the fairness of the result. The ODI were there every step of the way. (November 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/a0/eb/56a0eb2ef362be0883000009/burkina.png",
+    "links": [
+        {
+            "url":  "http://www.theguardian.com/news/datablog/2015/dec/04/why-data-was-crucial-to-burkina-fasos-first-election-since-uprising",
+            "title": "News article"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-how-the-odi-helped-to-deliver-a-successful-democratic-transition-in-burkina-faso",
+            "title": "The story"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-how-the-odi-helped-to-deliver-a-successful-democratic-transition-in-burkina-faso",
+        "title": "Impact"
+        }
+    ]
+  },
+  {
+    "Title": "Data-driven support for mental health",
+    "Excerpt": "Digital design studio M/A work have worked with mental health charity Mind to build an online hub and web app that pulls together open data from a whole range of sources with the goal of helping people with mental health conditions find opportunities for support and, eventually, employment. (November 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/a1/0c/56a10cc11f986a0842000015/Fill_13_Copy_3.png",
+    "links": [
+        {
+            "url": "http://theodi.org/blog/odi-summer-showcase-working-with-mental-health",
+            "title": "Blog"
+        },
+        {
+            "url": "http://theodi.org/summer-showcase-plexus",
+            "title": "The story"
+        }
+    ]
+  },
+  {
+    "Title": "Investment in Open Data Challenge Series could see 5 to 10-fold return to UK economy over 3 years",
+    "Excerpt": "A report released by the Open Data Institute (ODI) and Nesta provides evidence for the first time of how open data could strengthen the UK economy. (October 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/3b/70/563b70771f986a087000000d/Rectangle_1.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/investment-in-open-data-challenge-series-could-see-10fold-return-to-uk-economy-over-3-years",
+            "title": "News article"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-delivering-on-the-early-promise-of-the-open-data-challenge-series",
+            "title": "Impact"
+        }
+    ]
+  },
+  {
+    "Title": "Open data means business (UK)",
+    "Excerpt": "Diverse companies use open data to create innovative products and services. The ODI has analysed 270 UK open data companies, with an annual turnover of £92bn, showing the scale of open data's potential value for business. (June 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/76/c6/5576c6a3d0d462088500007e/UKMap-all-post.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/new-odi-research-shows-open-data-reaching-every-sector-of-uk-industry",
+            "title": "News article"
+        },{
+            "url": "http://theodi.org/open-data-means-business",
+            "title": "Research paper"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-open-data-means-business-in-2015",
+            "title": "Impact"
+        }
+    ]
+  },
+  {
+    "Title": "Spend Network reveals UK businesses starved of £22bn in cash flow by government inefficiencies",
+    "Excerpt": "ODI startup Spend Network revealed that up to £22 billion of government cash, intended for the UK economy, is delayed by an inefficient tendering system. The company’s analysis of over £1 trillion of EU procurement data showed that the UK’s tendering process is 45% slower than the EU average, and that up to £734 million of the stalled funds could be delayed to UK SMEs each year. (February 2014)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/45/71/534571361f986a2ef000015a/20140409_stoires_spend_network.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/new-data-analysis-by-odi-startup-shows-uk-businesses-starved-of-22bn-in-cash-flow",
+            "title": "Full story"
+        },{
+            "url": "http://tt.spendnetwork.com/index.html",
+            "title": "Analysis tool"
+        }
+    ]
+  },
+  {
+    "Title": "Show me the money - Peer-to-Peer Lending Businesses Lead the Way in Opening up Financial Data",
+    "Excerpt": "The ODI's report, Show me the Money provided a comprehensive snapshot of the UK peer-to-peer lending (P2P) market. Using data from the three biggest P2P platforms in the UK (Zopa, RateSetter and Funding Circle) we highlight the regional geography of lending in the UK. This is the first time anyone had published financial data with an open data certificate. (July 2013)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/45/6d/53456d92d0d462077100009d/20140409_stoires_p2p.png",
+    "links": [
+        {
+            "url": "http://theodi.org/blog/peer-peer-lending-businesses-lead-way-opening-financial-data",
+            "title": "Full story"
+        },{
+            "url": "http://smtm.labs.theodi.org",
+            "title": "Analysis tool"
+        }
+    ]
+  },
+  {
+    "Title": "Open Data Barometer - insight into open data policy around the world",
+    "Excerpt": "Developed in collaboration between the Web Foundation and the Open Data Institute, the Open Data Barometer offers a useful way to measure how well countries are doing at opening up data. The Open Data Barometer assesses readiness (such as policy context), implementation and impacts, offering a measure of how far the publication of open data is affecting business and society as a whole. (November 2013)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/8c/a3/538ca30d1f986a085f000035/Screen-Shot-2014-06-02-at-17.06.54.jpg",
+    "links": [
+        {
+            "url": "http://www.opendataresearch.org/project/2013/odb",
+            "title": "Full story"
+        },{
+            "url": "http://theodi.github.io/open-data-barometer-viz/",
+            "title": "Analysis tool"
+        }
+    ]
+  },
+  {
+    "Title": "Travel smarter",
+    "Excerpt": "Startup Fasteroute worked with the ODI to analyse aggregated train arrival data, showing how the morning commute varies across Britain and how people can win back time by modifying their commute. (November 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/a1/0c/56a10c841f986a0842000013/rail.png",
+    "links": [
+        {
+            "url": "http://theodi.org/blog/open-data-app-fasteroute-could-help-commuters-avoid-over-five-hours-of-train-delays-a-year",
+            "title": "News article"
+        },{
+            "url": "http://theodi.org/summer-showcase-visualising-rail-disruption",
+            "title": "The story"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-visualising-rail-disruption-helped-commuters-avoid-delays",
+            "title": "Impact"
+        }
+    ]
+  },
+  {
+    "Title": "Democratising air quality",
+    "Excerpt": "Startup OpenSensors.io deployed a series of air quality and noise sensors in residents’ gardens over a wide area around Heathrow. By engaging the public in this way, their project democratises the collection and publication of data that anyone can access, use and share, bringing facts to a polarised debate over current and projected environmental impact. (November 2015)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/3b/63/563b636c1f986a087000000b/Fill_13_Copy.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/breathe-heathrow",
+            "title": "News article"
+        },{
+            "url": "http://theodi.org/summer-showcase-breathe-heathrow",
+            "title": "The story"
+        },{
+            "url": "http://theodi.org/blog/a-year-in-open-data-breathe-heathrow-informs-policy-making",
+            "title": "Impact"
+        }
+    ]
+  },
+  {
+    "Title": "Enhancing open data with identifiers",
+    "Excerpt": "Identifiers are at the heart of how data becomes linked, but not many people know how to use them. The ODI and Thomson Reuters have written a guide to identifier schemes. (October 2014)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/52/7a/54527a661f986a086b000009/Creating_Value_with_Identifiers_in_an_Open_Data_World_Full.png",
+    "links": [
+        {
+            "url": "http://theodi.org/blog/guest-post-linked-data-and-the-future-of-the-web",
+            "title": "Blog post"
+        },{
+            "url": "http://theodi.org/guides/data-identifiers-white-paper",
+            "title": "White paper"
+        }
+    ]
+  },
+  {
+    "Title": "Prescription savings worth millions identified by Mastodon C",
+    "Excerpt": "In 2012, Mastodon C worked with the ODI, Open Health Care UK and doctor and writer Ben Goldacre to analyse open data around prescribing patterns of statins across the UK, identifying £200 million potential savings to the NHS. (December 2012)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/45/6f/53456f2bf362be6c87000131/20140409_stoires_analytics.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/prescription-savings-worth-millions-identified-odi-incubated-company",
+            "title": "Full story"
+        },{
+            "url": "http://www.prescribinganalytics.com",
+            "title": "Analysis tool"
+        }
+    ]
+  },
+  {
+    "Title": "ODI reveals impact of London fire station closures using open data",
+    "Excerpt": "The ODI, working with partner Telefónica Dynamic Insights, developed new tools to assess the potential impact of planned fire station closures in London. The tools allow citizens and policymakers to personally investigate the effects of the plans using open data for the first time. (October 2013)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/45/6b/53456be8f362be6c8700012f/20140409_stoires_fire.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/odi-reveals-impact-of-london-fire-station-closures-using-open-data",
+            "title": "Full story"
+        },{
+            "url": "http://london-fire.labs.theodi.org",
+            "title": "Analysis tool"
+        }
+    ]
+  },
+  {
+    "Title": "Open Corporates - open data reveals global corporate networks",
+    "Excerpt": "ODI startup Open Corporates created open data visualisations showing the global corporate networks of millions of businesses across the world. In addition, OpenCorporates produced maps which show the world-wide interests of four US banks - Bank of America, Citigroup, Goldman Sachs and Morgan Stanley. They revealed complex and deep networks, as well as the central position that the Cayman Islands have within the networks. (July 2013)",
+    "image": "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/45/6e/53456e491f986a2ef0000158/20140409_stoires_opencorporates.png",
+    "links": [
+        {
+            "url": "http://theodi.org/news/power-open-data-reveals-global-corporate-networks",
+            "title": "Full story"
+        },{
+            "url": "http://opencorporates.com/viz/financial/index.html",
+            "title": "Analysis tool"
+        }
+    ]
+  }
+]
+}
