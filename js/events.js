@@ -290,7 +290,7 @@ function renderItem(item,location) {
     if (item.format == "course_instance") {
         course = item.details.course;
         desc = "";
-        image = "img/course-img/odi_course_default.jpg";
+        image = "/img/course-img/odi_course_default.jpg";
         $.getJSON('http://contentapi.theodi.org/'+item.details.course+'.json', function(coursedata) {
             desc = coursedata.details.excerpt;
             $('.desc_'+item.details.course).each(function(i, obj) {
