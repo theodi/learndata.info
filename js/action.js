@@ -53,16 +53,27 @@ function processListeners() {
 }
 
 function addCourses() {
-	renderCourse('Open Data in a day','courses_box','explorer','odd');
-	renderCourse('Practical data management','courses_box','practitioner','odm');
-	renderCourse('Open data publication','courses_box','practitioner','odpub');
- 	renderCourse('Visualising open data','courses_box','practitioner','odv'); 
-    renderCourse('Open data science','courses_box','practitioner','ods');  
-  	renderCourse('Building success in open data','courses_box','strategist','bs');
-  	renderCourse('Managing risk in open data','courses_box','strategist','mr');
-  	renderCourse('Business innovation workshop','courses_box','strategist','biw');
-    renderCourse('Practical leadership in open data','courses_box','pioneer','plod'); 
-    renderCourse('Data driven decisions','courses_box','pioneer','odpol');
+	renderCourse('Open Data in a day','courses_box_1','explorer','odd');
+	renderCourse('Practical data management','courses_box_1','practitioner','odm');
+	renderCourse('Open data publication','courses_box_1','practitioner','odpub');
+ 	renderCourse('Visualising open data','courses_box_1','practitioner','odv'); 
+    renderCourse('Open data science','courses_box_1','practitioner','ods');  
+  	renderCourse('Building success in open data','courses_box_1','strategist','bs');
+  	renderCourse('Managing risk in open data','courses_box_1','strategist','mr');
+  	renderCourse('Business innovation workshop','courses_box_1','strategist','biw');
+    renderCourse('Practical leadership in open data','courses_box_1','pioneer','plod'); 
+    renderCourse('Data driven decisions','courses_box_1','pioneer','odpol');
+
+    renderCourse('Open Data in a day','courses_box_2','explorer','odd');
+	renderCourse('Practical data management','courses_box_2','practitioner','odm');
+	renderCourse('Open data publication','courses_box_2','practitioner','odpub');
+ 	renderCourse('Visualising open data','courses_box_2','practitioner','odv'); 
+    renderCourse('Open data science','courses_box_2','practitioner','ods');  
+  	renderCourse('Building success in open data','courses_box_2','strategist','bs');
+  	renderCourse('Managing risk in open data','courses_box_2','strategist','mr');
+  	renderCourse('Business innovation workshop','courses_box_2','strategist','biw');
+    renderCourse('Practical leadership in open data','courses_box_2','pioneer','plod'); 
+    renderCourse('Data driven decisions','courses_box_2','pioneer','odpol');
 	
 	renderCourse('What is open data?','elearning_box','explorer','mod1');
 	renderCourse('Unlocking value from open data','elearning_box','explorer','mod2');

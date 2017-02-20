@@ -1,7 +1,3 @@
-.hex2 {
-  width: 100px;
-  height: 100px;
-}
 .intro {
   //background-color: #91dfff; 
   background-color: #00b6ff; 
@@ -31,7 +27,6 @@
 }
 .hexagon-wrapper {
   text-align: center;
-  margin: -7px;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -60,14 +55,6 @@
   width: inherit;
   content: '';
   transform: rotateZ(-60deg);
-}
-.even {
-    display: inline-block;
-    top: 52px;
-}
-#hex_row {
-  margin-top: 7px;
-  margin-left: 10px;
 }
 .no {
   opacity: 0;
@@ -99,17 +86,6 @@
   color: white;
   letter-spacing: 0.5px;
 }
-.hex2 img {
-  position: absolute;
-  z-index: 2000;
-  top: 6%;
-  height: 44px;
-  left: 25%;
-}
-#hex_container {
-  width: 680px;
-  margin-left: 34px;
-}
 #hex_key {
   text-align: center;
   width: 100%;
@@ -132,4 +108,112 @@
 .course_filter {
   text-decoration: underline;
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .framework {
+    display: inline-block; 
+    float: left; 
+    max-width: 50%;
+  }
+  .framework_exp {
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+  }
+  .hex2 {
+    width: 100px;
+    height: 100px;
+  }
+  .hex2 img {
+    position: absolute;
+    z-index: 2000;
+    top: 6%;
+    height: 44px;
+    left: 25%;
+  }
+  .even {
+    display: inline-block;
+    top: 52px;
+  }
+  .hexagon-wrapper {
+    margin: -7px;
+  }
+  #hex_row {
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  .courses_box_2_title {
+    display: none;
+  }
+  #courses_box_2 {
+    display:none;
+  }
+  .courses_box_1_title {
+    display: block;
+  }
+  #courses_box_1 {
+    display:inline-block;
+    min-width: 265px; 
+    max-width: 300px; 
+    vertical-align: top;
+  }
+  #elearning_box {
+    display: inline-block; 
+    width: 300px; 
+    vertical-align: top;
+  }
+  #hex_container {
+    width: 680px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .framework {
+    display: block;
+  } 
+  .framework_exp {
+    display: block;
+  }
+  .hex2 {
+    width: 68px;
+    height: 68px;
+  }
+  .hex2 img {
+    position: absolute;
+    z-index: 2000;
+    top: 20%;
+    height: 39px;
+    left: 19%;
+  }
+  .even {
+    display: inline-block;
+    top: 35px;
+  }
+  .hexagon-wrapper {
+    margin: -5px;
+  }
+  #hex_row {
+    margin-top: 2px;
+    margin-left: 10px;
+  }
+  .hex2 h4 {
+    display: none;  
+  }
+  #courses_box_1 {
+    display:none;
+  }
+  #courses_box_2 {
+    display:block;
+  }
+  .courses_box_2_title {
+    display: block
+  }
+  .courses_box_1_title {
+    display: none;
+  }
+  #elearning_box {
+    display: block; 
+  }
+  #hex_container {
+    width: 450px;
+  }
 }
