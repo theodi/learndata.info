@@ -10,16 +10,14 @@ function getPosition(coursename) {
             return 3;
         case "open-data-science":
             return 4;
-        case "open-data-strategy":
-            return 5;
         case "business-innovation-workshop":
-            return 6;
+            return 5;
         case "managing-risk-with-open-data":
-            return 7;
+            return 6;
         case "practical-leadership-in-open-data":
-            return 8;
+            return 7;
         case "train-the-trainer":
-            return 9;
+            return 8;
         return -1;
     }
 }
