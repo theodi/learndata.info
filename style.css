@@ -1928,6 +1928,11 @@
         width: 100%;
         max-height: 280px;
     }
+
+    .single_courses.course-list .single_courses_thumb .elearning_thumb {
+        height: 100%;
+        max-height: 100%;
+    }
     
     .single_courses.course-list .single_courses_desc {
         display: block;

@@ -2,6 +2,13 @@
 :: Medium Screen Desktop: 992px 
 ============================= */
 
+.price_rating_area .price .elearning_wide {
+    display: inline-block;
+}
+.price_rating_area .price .elearning_mobile {
+    display: none;
+}
+
 @media only screen and (min-width: 1200px) {
     .single_courses.course-list .single_courses_thumb img {
         height: 280px;
@@ -13,6 +20,21 @@
         max-height: 231px;
     }
 }
+@media only screen and (max-width: 767px) {
+    .elearning_go {
+        display: none;
+    }
+    .price_rating_area .price .elearning_wide {
+        display: none;
+    }
+    .price_rating_area .price .elearning_mobile {
+        display: inline-block;
+    }
+    .price_rating_area {
+        padding: 6px;
+    }
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     nav.navigation_area ul li a {
