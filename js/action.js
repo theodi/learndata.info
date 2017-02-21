@@ -92,9 +92,9 @@ function addCourses() {
 }
 
 function renderCourse(title,element,framework,id) {
-    block =  '<div class="'+framework+' price_rating_area course_filter" style="padding: 5px 5px 2px; margin-bottom: 6px;" id="'+id+'">';
+    block =  '<div class="'+framework+' price_rating_area course_filter course_skills" id="'+id+'">';
     block += '   <div class="price">';
-    block += '      <span style="font-size: 16px; font-weight: 500;">'+title+'</span>';
+    block += '      <span class="course_title">'+title+'</span>';
     block += '   </div>';
     block += '</div>';
     $("#"+element).append(block);

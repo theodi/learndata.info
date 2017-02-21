@@ -60,16 +60,17 @@
   opacity: 0;
 }
 .hex2 h4 {
-  font-size:0.85em;
+  font-size: 0.7em;
   position: absolute;
   z-index: 2000;
   top: 55%;
-  width: 100px;
+  width: 80px;
   font-weight: lighter;
   left: 0px;
   font-weight: 200;
   color: white;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  line-height: 1.3em;
 }
 #hex_key {
   text-align: center;
@@ -94,85 +95,191 @@
   text-decoration: underline;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
-  .framework {
-    display: inline-block; 
-    float: left; 
-    max-width: 50%;
-  }
-  .framework_exp {
-    display: inline-block;
-    float: right;
-    max-width: 50%;
-  }
-  .hex2 {
-    width: 100px;
-    height: 100px;
-  }
-  .hex2 img {
-    position: absolute;
-    z-index: 2000;
-    top: 6%;
-    height: 44px;
-    left: 25%;
-  }
-  .even {
-    display: inline-block;
-    top: 52px;
-  }
-  .hexagon-wrapper {
-    margin: -7px;
-  }
-  #hex_row {
-    margin-top: 7px;
-    margin-left: 10px;
-  }
-  .courses_box_2_title {
-    display: none;
-  }
-  #courses_box_2 {
-    display:none;
-  }
-  .courses_box_1_title {
-    display: block;
-  }
-  #courses_box_1 {
-    display:inline-block;
-    min-width: 265px; 
-    max-width: 300px; 
-    vertical-align: top;
-  }
-  #elearning_box {
-    display: inline-block; 
-    width: 300px; 
-    vertical-align: top;
-  }
-  #hex_container {
-    width: 680px;
-  }
-  .hex3 {
-    width: 40px;
-    height: 40px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .hex3 h4 {
-    font-size:0.9em;
-    position: absolute;
-    z-index: 2000;
-    top: 110%;
-    width: 80px;
-    font-weight: lighter;
-    left: -20px;
-  }
+.price_rating_area .price > span {
+  font-size: 13px; 
+  font-weight: 200;
 }
-@media only screen and (max-width: 767px) {
+.course_skills {
+  padding: 2px 2px 0px;
+  margin-bottom: 2px;
+}
+.practitioner {
+  border-bottom: 3px solid #ef3aab;
+}
+.explorer {
+  border-bottom: 3px solid #18BC9C;
+}
+.strategist {
+  border-bottom: 3px solid #ef3aab;
+}
+.pioneer {
+ border-bottom: 3px solid #ff6700; 
+}
+.other {
+  border-bottom: 3px solid black;
+}
+.framework {
+  display: inline-block; 
+  float: left; 
+  max-width: 50%;
+}
+.framework_exp {
+  display: inline-block;
+  float: right;
+  max-width: 50%;
+}
+.hex2 {
+  width: 80px;
+  height: 80px;
+}
+.hex2 img {
+  position: absolute;
+  z-index: 2000;
+  top: 6%;
+  height: 35px;
+  left: 25%;
+}
+.even {
+  display: inline-block;
+  top: 43px;
+}
+.hexagon-wrapper {
+  margin: -6px;
+}
+#hex_row {
+  margin-top: 4px;
+  margin-left: 0px;
+}
+.courses_box_2_title {
+  display: none;
+}
+#courses_box_2 {
+  display:none;
+}
+.courses_box_1_title {
+  display: block;
+}
+.left_box {
+  display:inline-block;
+  vertical-align: top;
+  width:20%;
+}
+.middle_box {
+  display:inline-block;
+  width: 57%;
+  text-align: center;
+}
+#courses_box_1 {
+  display:inline-block;
+  min-width: 200px; 
+  max-width: 250px; 
+  vertical-align: top;
+}
+#courses_box_2 {
+  display:inline-block;
+  min-width: 200px; 
+  max-width: 250px; 
+  vertical-align: top;
+}
+#elearning_box {
+  display: inline-block; 
+  min-width: 200px; 
+  max-width: 250px;  
+  vertical-align: top;
+}
+#hex_container {
+  width: 515px;
+  height: 500px; 
+}
+.hex3 {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hex3 h4 {
+  font-size:0.75em;
+  position: absolute;
+  z-index: 2000;
+  top: 110%;
+  width: 80px;
+  font-weight: lighter;
+  left: -20px;
+}
+.bottom_box {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+.courses_box_bottom {
+  display: none;
+}
+.right_box {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+@media only screen and (max-width: 1000px) {
   .framework {
     display: block;
+    max-width: 100%;
   } 
   .framework_exp {
     display: block;
+    max-width: 100%;
   }
+  #courses_box_1 {
+    display:none;
+  }
+  #courses_box_2 {
+    display:block;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .courses_box_2_title {
+    display: block;
+    font-size: 1.2em;
+  }
+  .courses_box_1_title {
+    display: none;
+  }
+  #elearning_box {
+    display: block; 
+    font-size: 1.2em;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .eLearning_title {
+    font-size: 1.2em;
+  }
+  .bottom_box {
+    display: inline-block;
+    //width: 48%;
+    vertical-align: top;
+    text-align: left;
+  }
+  .courses_box_bottom {
+    display: inline-block;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    position: relative;
+    left: -59px;
+  }
+  .right_box {
+    text-align: center;
+    width: 100%;
+  }
+  .left_box {
+    display: none;
+  }
+  .middle_box {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
   .hex2 {
     width: 68px;
     height: 68px;
@@ -183,6 +290,7 @@
     top: 20%;
     height: 39px;
     left: 19%;
+    max-width: 50px;
   }
   .even {
     display: inline-block;
@@ -198,23 +306,9 @@
   .hex2 h4 {
     display: none;  
   }
-  #courses_box_1 {
-    display:none;
-  }
-  #courses_box_2 {
-    display:block;
-  }
-  .courses_box_2_title {
-    display: block
-  }
-  .courses_box_1_title {
-    display: none;
-  }
-  #elearning_box {
-    display: block; 
-  }
   #hex_container {
     width: 450px;
+    height: 430px;
   }
   .hex3 {
     width: 40px;
@@ -230,5 +324,91 @@
     width: 71px;
     font-weight: lighter;
     left: -16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hex2 {
+    width: 46px;
+    height: 46px;
+  }
+  .hex2 img {
+    position: absolute;
+    z-index: 2000;
+    top: 20%;
+    height: 26px;
+    left: 19%;
+    max-width: 29px;
+  }
+  .even {
+    display: inline-block;
+    top: 25px;
+  }
+  .hexagon-wrapper {
+    margin: -4px;
+  }
+  #hex_row {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .hex2 h4 {
+    display: none;  
+  }
+  #hex_container {
+    width: 290px;
+    height: 320px;
+  }
+  #hex_key {
+    top: -15px;
+  }
+  .courses_box_bottom {
+    display: inline-block;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    position: relative;
+    left: -59px;
+  }
+  #courses_box_2 {
+    display:block;
+    font-size: 8px;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .courses_box_2_title {
+    display: block;
+    font-size: 1.2em;
+  }
+  .courses_box_1_title {
+    display: none;
+  }
+  #elearning_box {
+    display: block; 
+    font-size: 8px;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .eLearning_title {
+    font-size: 1.2em;
+  }
+  .hex3 {
+    width: 26px;
+    height: 26px;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  .hex3 h4 {
+    font-size: 0.5em;
+    position: absolute;
+    z-index: 2000;
+    top: 110%;
+    width: 60px;
+    font-weight: lighter;
+    left: -16px;
+  }
+  .price_rating_area .price > span {
+    font-size: 9px; 
+    font-weight: 100;
   }
 }

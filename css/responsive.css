@@ -112,7 +112,6 @@
         float: none;
         width: 100%;
         display: block;
-        min-height: auto;
     }
     .single_latest_news_text_area {
         display: block;
@@ -356,7 +355,6 @@
         float: none;
         width: 100%;
         display: block;
-        min-height: auto;
     }
     .single_latest_news_text_area {
         display: block;
