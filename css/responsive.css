@@ -2,6 +2,18 @@
 :: Medium Screen Desktop: 992px 
 ============================= */
 
+@media only screen and (min-width: 1200px) {
+    .single_courses.course-list .single_courses_thumb img {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .single_courses.course-list .single_courses_thumb img {
+        max-height: 231px;
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     nav.navigation_area ul li a {
         padding: 15px 13px 26px;

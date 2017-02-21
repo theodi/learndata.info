@@ -89,11 +89,11 @@ function processCourses(courses,instances) {
 function processCourse(course,instances) {
     block = '';
     title = course["title"];
-    console.log(title);
     link = course["web_url"];
     subtitle = course.details["excerpt"];
     coursename = course["slug"];
     if (subtitle.length > 140) {
+
         subtitle = subtitle.substring(0,140);
         subtitle = subtitle.substring(0,subtitle.lastIndexOf(' '));
         subtitle = subtitle + "...<a style='color: #333; text-decoration: underline; font-size: 0.9em;' href='" + link + "'>read more</a>";
@@ -103,14 +103,21 @@ function processCourse(course,instances) {
     price = course["extra"]["price"];
     level = course["extra"]["level"];
     framework = course["extra"]["framework"];
+    image = course["details"]["description"];
+    if (image.indexOf('src="') > 0) {
+        image = image.substring(image.indexOf('src="')+5,image.length);
+        image = image.substring(0,image.indexOf('"'));
+    } else {
+        image = "../img/course-img/odi_course_default.jpg";
+    }
     occurs = getCourseInstances(instances,key);
     block += '    <div class="col-xs-12">';
     block += '        <div class="single_courses course-list">';
     block += '            <div class="single_courses_thumb">';
-    block += '                 <img src="../img/course-img/odi_course_default.jpg" alt="">';
+    block += '                 <img src="'+image+'" alt="">';
     block += '                    <div class="hover_overlay">';
     block += '                        <div class="links">';
-    block += '                            <a class="magnific-popup" href="../img/course-img/softwareengineer.jpg"><i class="fa fa-search" aria-hidden="true"></i></a>';
+    block += '                            <a class="magnific-popup" href="'+image+'" onerror="this.src=\'../img/course-img/softwareengineer.jpg\'"><i class="fa fa-search" aria-hidden="true"></i></a>';
     block += '                        </div>';
     block += '                    </div>';
     block += '                </div>';
@@ -180,7 +187,7 @@ function getCourseInstances(instances,key) {
                 suffix = "rd";
             }
             ins["displayDate"] = day + suffix + " " + monthNames[month];
-      ins["shortDate"] = (day < 10 ? '0' : '') + day + (month < 9 ? '0' : '') + (month+1) + run.getFullYear()
+            ins["shortDate"] = (day < 10 ? '0' : '') + day + (month < 9 ? '0' : '') + (month+1) + run.getFullYear()
             // Removed the ticket availability check
             if (run > now) {
                 occurs.push(ins);
@@ -196,5 +203,5 @@ function renderInstances(occurs,title) {
         return '<a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course" style="border: 1px solid #333;">Register interest</a>';
     }
     ocr = occurs[0];
-    return ocr["displayDate"] + ' ('+ocr["location"] + ')<a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">Book</a>';
+    return ocr["displayDate"] + ' ('+ocr["location"] + ')<a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">&nbsp;Book</a>';
 }

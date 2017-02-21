@@ -1926,6 +1926,7 @@
     
     .single_courses.course-list .single_courses_thumb img {
         width: 100%;
+        max-height: 280px;
     }
     
     .single_courses.course-list .single_courses_desc {
