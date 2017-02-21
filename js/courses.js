@@ -203,5 +203,5 @@ function renderInstances(occurs,title) {
         return '<a class="courseButton btn btn-primary" href="mailto:training@theodi.org?subject=Interest in ' + title + ' course" style="border: 1px solid #333;">Register interest</a>';
     }
     ocr = occurs[0];
-    return ocr["displayDate"] + ' ('+ocr["location"] + ')<a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">&nbsp;Book</a>';
+    return ocr["displayDate"] + ' ('+ocr["location"] + ')&nbsp;<a href="'+ocr["url"]+'" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;" onclick="onBookButton(\''+title+'\',\''+ocr["shortDate"]+'\')">Book</a>';
 }
