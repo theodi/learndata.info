@@ -1,0 +1,55 @@
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth <= 0 %} {% assign base = '.' %}
+{% elsif depth == 1 %} {% assign base = '..' %}
+{% elsif depth == 2 %} {% assign base = '..' %}
+{% elsif depth == 3 %} {% assign base = '../..' %}
+{% endif %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body id="page-top" class="index">
+
+    {{ content }}
+    
+  <!-- ===================== All jQuery Plugins ===================== -->
+
+	<!-- bootstrap js -->
+	<script src="{{base}}/js/bootstrap.min.js"></script>
+
+	<!-- Nivoslider js -->
+	<script src="{{base}}/js/jquery.nivoslider.js"></script>
+	<script src="{{base}}/js/nivoslider-active.js"></script>
+
+	<!-- owl-carousel js -->
+	<script src="{{base}}/js/owl.carousel.min.js"></script>
+
+	<!-- Ajax Contact js -->
+	<script src="{{base}}/js/ajax-contact.js"></script>
+
+	<!-- Coundown js -->
+	<script src="{{base}}/js/coundown-timer.js"></script>
+
+	<!-- Meanmenu js -->
+	<script src="{{base}}/js/meanmenu.js"></script>
+
+	<!-- Magnific Popup js -->
+	<script src="{{base}}/js/jquery.magnific-popup.min.js"></script>
+
+	<!-- Counterup and Waypoint js -->
+	<script src="{{base}}/js/jquery.waypoints.min.js"></script>
+	<script src="{{base}}/js/counterup.min.js"></script>
+
+	<!-- back to top js -->
+	<script src="{{base}}/js/jquery.scrollUp.js"></script>
+
+	<!-- wow js -->
+	<script src="{{base}}/js/wow.min.js"></script>
+
+	<!-- script js -->
+	<script src="{{base}}/js/custom.js"></script>
+
+  </body>
+
+</html>
