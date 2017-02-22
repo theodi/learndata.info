@@ -47,7 +47,6 @@
     :: Import all css 
     =================== */
     
-    @import 'css/bootstrap.min.css';
     @import 'css/nivoslider.css';
     @import 'css/magnific-popup.css';
     @import 'css/animate.css';

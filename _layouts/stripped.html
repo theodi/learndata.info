@@ -7,12 +7,54 @@
 {% endif %}
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="{{base}}/img/core-img/favicon.ico">
+
+    <!-- ===================== All CSS Files ===================== -->
+
+    <link rel="stylesheet" href="{{base}}/css/custom.css">
+    <link rel="stylesheet" href="{{base}}/css/bootstrap_embed.min.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{{base}}/style.css">
+    <link rel="stylesheet" href="{{base}}/css/skillsframework.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{base}}/css/responsive.css">
+
+    <!-- Color Changer css -->
+    <link rel="stylesheet" href="{{base}}/css/color-changer.css">
+
+    <!-- jQuery (necessary for all JavaScript plugins) -->
+    <script src="{{base}}/js/jquery-2.2.4.min.js"></script>
+
+    <script src="{{base}}/js/odi.js"></script>
+
+    <script src="{{base}}/js/events.js"></script>
+
+    <script src="{{base}}/js/course_menu.js"></script>
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
 
   <body id="page-top" class="index">
 
     {{ content }}
-    
+
   <!-- ===================== All jQuery Plugins ===================== -->
 
 	<!-- bootstrap js -->
