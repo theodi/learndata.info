@@ -50,9 +50,15 @@ page.url: /elearning/open_data_essentials.html
                  <!-- Single Courses Title Area End -->
                  <div class="title">
                      <a href="view-course.html#'+coursename+'"><h5>Open data essentials</h5></a>
-                     <p>Welcome to the Open Data Institute's e-Learning programme.</p>
-                     <p>This programme has been designed to enable you to discover what open data is and how it is changing the lives of everyone on our planet.elds can learn from each other, in order to find and tell compelling stories with data.</p><br/>&nbsp;<br/>&nbsp;<br/>
-                     <p><i class="fa fa-user" aria-hidden="true"></i>Beginner</p>
+                     <p><i class="fa fa-user" aria-hidden="true"></i> Beginner
+                     <span class="time"><span class="icon-clock" style="padding-left: 10px;"></span> 3h</span></p>
+                     <p>Learn all the essentials of open data with this easy to follow online course.</p>
+                     <p>This programme has been designed to enable you to discover what open data is and how it is changing the lives of everyone on our planet.</p>
+                     <p>Why not download the mobile version and then you can take the course from anywhere!</p>
+                     <div width="100%" align="center">
+                     <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1097517737&amp;mt=8" target="_blank"><img style="width: 160px;margin: 5px;" src="../img/app_store_logo.png"></a>
+                     <a href="https://play.google.com/store/apps/details?id=org.theodi.elearning_lite" target="_blank"><img style="width: 160px;margin: 5px;" src="../img/google-play-line.png"></a>
+                     </div>
                  </div>
                  <!-- Single Courses Blog Title Area End -->
                  <div class="'+framework+' price_rating_area">
@@ -60,7 +66,7 @@ page.url: /elearning/open_data_essentials.html
                          <span>£Free</span>
                      </div>
                      <div class="seat">
-                        <a href="https://accelerate.theodi.org" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Start course</a>
+                        <a href="http://accelerate.theodi.org" class="courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Start course</a>
                         <!--<i class="fa fa-users" aria-hidden="true"><span>16</span></i>-->
                      </div>
                  </div>
@@ -82,7 +88,7 @@ $( document ).ready(function() {
             block += '<span class="elearning_mobile"><a href="https://accelerate.theodi.org/#/id/'+data[i]["_id"]+'" target="_blank">'+data[i]["title"]+'</a></span>';
             block += '</div>';
             block += '<div class="seat">';
-            block += '<a href="https://accelerate.theodi.org/#/id/'+data[i]["_id"]+'" class="elearning_go courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Go to module</a>';
+            block += '<a href="http://accelerate.theodi.org/#/id/'+data[i]["_id"]+'" class="elearning_go courseButton bookButton btn btn-primary" style="border: 1px solid #333;">Go to module</a>';
             block += '</div></div>';
             $('.course-list').append(block);
         }
