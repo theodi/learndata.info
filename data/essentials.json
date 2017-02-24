@@ -4,7 +4,7 @@
       "alt": "",
       "src": "course/en/assets/94164aeed2f6885fcdf44f9fe5484855c5238353.jpg"
     },
-    "_id": "5886263fb61c46e176e7e653",
+    "_id": "module1",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -40,7 +40,7 @@
       "alt": "",
       "src": "course/en/assets/1fc73255e55ba04b56c12fcf0dda29d60db46b4d.jpg"
     },
-    "_id": "5889d951b61c46e176e7e857",
+    "_id": "module2",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -76,7 +76,7 @@
       "alt": "",
       "src": "course/en/assets/a699447adb040b8b78c36f46d46356ba124debf3.png"
     },
-    "_id": "5889e11ab61c46e176e7e881",
+    "_id": "module3",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -112,7 +112,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "588a2d9ab61c46e176e7e913",
+    "_id": "module4",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -148,7 +148,7 @@
       "alt": "",
       "src": "course/en/assets/b0a1356f5ad57eff61e6a22b69a2e1b6d9773220.jpg"
     },
-    "_id": "588f2e4fb61c46e176e7ea6f",
+    "_id": "module5",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -184,7 +184,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "588f3feeb61c46e176e7eaa9",
+    "_id": "module6",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -215,7 +215,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "588f5556b61c46e176e7eae6",
+    "_id": "module7",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -251,7 +251,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "58905843b61c46e176e7eb2a",
+    "_id": "module8",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -287,7 +287,7 @@
       "alt": "",
       "src": "course/en/assets/3870d2023395291d5f1bd5c0837f8178067fd665.jpg"
     },
-    "_id": "589068f1b61c46e176e7eb67",
+    "_id": "module9",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -323,7 +323,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "5891cdfbb61c46e176e7f033",
+    "_id": "module10",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -348,7 +348,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "589215ccb61c46e176e7f092",
+    "_id": "module11",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -373,7 +373,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "589485f2fda9f5660ad841f2",
+    "_id": "module12",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
@@ -398,7 +398,7 @@
       "alt": "",
       "src": ""
     },
-    "_id": "589495a8fda9f5660ad84242",
+    "_id": "module13",
     "_parentId": "course",
     "_type": "page",
     "_isAvailable": true,
