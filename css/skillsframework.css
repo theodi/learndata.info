@@ -306,7 +306,6 @@
     display: none;  
   }
   #hex_container {
-    width: 450px;
     height: 430px;
   }
   .hex3 {
@@ -353,7 +352,6 @@
     display: none;  
   }
   #hex_container {
-    width: 290px;
     height: 320px;
   }
   #hex_key {

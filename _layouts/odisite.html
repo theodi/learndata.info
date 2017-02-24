@@ -1,0 +1,99 @@
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth <= 0 %} {% assign base = '.' %}
+{% elsif depth == 1 %} {% assign base = '..' %}
+{% elsif depth == 2 %} {% assign base = '..' %}
+{% elsif depth == 3 %} {% assign base = '../..' %}
+{% endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="{{base}}/img/core-img/favicon.ico">
+
+    <!-- ===================== All CSS Files ===================== -->
+
+
+    <link rel="stylesheet" href="{{base}}/css/custom.css">
+    
+    <link rel="stylesheet" href="//static.theodi.org/assets/application-52dedfe67b09d27e27bf3d2d50dfbe59.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{{base}}/style.css">
+    <link rel="stylesheet" href="{{base}}/css/skillsframework.css">
+
+    <!-- Responsive css -->
+    <!--<link rel="stylesheet" href="{{base}}/css/responsive_embed.css">-->
+
+    <!-- Color Changer css -->
+    <link rel="stylesheet" href="{{base}}/css/color-changer.css">
+
+    <!-- jQuery (necessary for all JavaScript plugins) -->
+    <script src="{{base}}/js/jquery-2.2.4.min.js"></script>
+
+    <script src="{{base}}/js/odi.js"></script>
+
+    <script src="{{base}}/js/events.js"></script>
+
+    <script src="{{base}}/js/course_menu.js"></script>
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+  <body id="page-top" class="index">
+
+    {{ content }}
+
+  <!-- ===================== All jQuery Plugins ===================== -->
+
+	<!-- bootstrap js -->
+	<script src="{{base}}/js/bootstrap.min.js"></script>
+
+	<!-- Nivoslider js -->
+	<script src="{{base}}/js/jquery.nivoslider.js"></script>
+	<script src="{{base}}/js/nivoslider-active.js"></script>
+
+	<!-- owl-carousel js -->
+	<script src="{{base}}/js/owl.carousel.min.js"></script>
+
+	<!-- Ajax Contact js -->
+	<script src="{{base}}/js/ajax-contact.js"></script>
+
+	<!-- Coundown js -->
+	<script src="{{base}}/js/coundown-timer.js"></script>
+
+	<!-- Meanmenu js -->
+	<script src="{{base}}/js/meanmenu.js"></script>
+
+	<!-- Magnific Popup js -->
+	<script src="{{base}}/js/jquery.magnific-popup.min.js"></script>
+
+	<!-- Counterup and Waypoint js -->
+	<script src="{{base}}/js/jquery.waypoints.min.js"></script>
+	<script src="{{base}}/js/counterup.min.js"></script>
+
+	<!-- back to top js -->
+	<script src="{{base}}/js/jquery.scrollUp.js"></script>
+
+	<!-- wow js -->
+	<script src="{{base}}/js/wow.min.js"></script>
+
+	<!-- script js -->
+	<script src="{{base}}/js/custom.js"></script>
+
+  </body>
+
+</html>
