@@ -53,33 +53,21 @@ function processListeners() {
 }
 
 function addCourses() {
-	renderCourse('Open data in a day','classroom','all_courses','explorer','odd');
-	renderCourse('Practical data management','classroom','all_courses','practitioner','odm');
-	renderCourse('Open data publication','classroom','all_courses','practitioner','odpub');
- 	renderCourse('Visualising open data','classroom','all_courses','practitioner','odv'); 
-    renderCourse('Open data science','classroom','all_courses','practitioner','ods');  
-  	renderCourse('Building success in open data','classroom','all_courses','strategist','bs');
-  	renderCourse('Managing risk in open data','classroom','all_courses','strategist','mr');
-  	renderCourse('Business innovation workshop','classroom','all_courses','strategist','biw');
-    renderCourse('Practical leadership in open data','classroom','all_courses','pioneer','plod'); 
-    renderCourse('Data driven decisions','classroom','all_courses','pioneer','odpol');
-	
-	renderCourse('1. What is open data?','essentials','all_courses','explorer','mod1');
-	renderCourse('2. Unlocking value from open data','essentials','all_courses','explorer','mod2');
-	renderCourse('3. Open data. Agent of change.','essentials','all_courses','strategist','mod3');
-	renderCourse('4. Why do we need to license?','essentials','all_courses','explorer','mod4');
-	renderCourse('5. What makes quality open data?','essentials','all_courses','practitioner','mod5');
-	renderCourse('6. Measureing success for open data','essentials','all_courses','strategist','mod6');
-	renderCourse('7. Why should we worry about sustainability?','essentials','all_courses','explorer','mod7');
-	renderCourse('8. Geting to grips with platforms','essentials','all_courses','practitioner','mod8');
-	renderCourse('9. Choosing the right format for open data','essentials','all_courses','practitioner','mod9');
-	renderCourse('10. How useful is my data?','essentials','all_courses','strategist','mod10');
-	renderCourse('11. How to clean your data','essentials','all_courses','practitioner','mod11');
-	renderCourse('12. Finding hidden data on the web','essentials','all_courses','practitioner','mod12');
-	renderCourse('13. Linking up the web of data','essentials','all_courses','practitioner','mod13');
+	renderCourse('Open data in a day','classroom','all_courses','explorer','odd','http://theodi.org/courses/open-data-day');
+	renderCourse('Practical data management','classroom','all_courses','practitioner','odm','#');
+	renderCourse('Open data publication','classroom','all_courses','practitioner','odpub','http://theodi.org/courses/finding-and-preparing-data-workshop');
+ 	renderCourse('Visualising open data','classroom','all_courses','practitioner','odv','http://theodi.org/courses/visualising-data-workshop'); 
+    renderCourse('Open data science','classroom','all_courses','practitioner','ods','http://theodi.org/courses/open-data-science');  
+  	renderCourse('Building success in open data','classroom','all_courses','strategist','bs','#');
+  	renderCourse('Managing risk in open data','classroom','all_courses','strategist','mr','http://theodi.org/courses/managing-risk-with-open-data');
+  	renderCourse('Business innovation workshop','classroom','all_courses','strategist','biw','http://theodi.org/courses/business-innovation-workshop');
+    renderCourse('Practical leadership in open data','classroom','all_courses','pioneer','plod','http://theodi.org/courses/practical-leadership-in-open-data'); 
+    renderCourse('Data driven decisions','classroom','all_courses','pioneer','odpol','#');
+
+    addEssentials('all_courses');
 }
 
-function renderCourse(title,type,element,framework,id) {
+function renderCourse(title,type,element,framework,id,link) {
 	if (type=='classroom') {
 		maintype = 'courses';
 	} else {
@@ -87,7 +75,7 @@ function renderCourse(title,type,element,framework,id) {
 	}
 	block = '<li class="home-module course_filter" class="'+framework+'" id="'+id+'" style="display: inline-block;">';
 	block += '<div class="module module-light module-highlight-1 module-colour-5 ">';
-	block += '<a href="#" target="_top">';
+	block += '<a href="'+link+'" target="_top">';
 	block += '<div class="text">';
 	block += '<h1 class="module-heading">'+title+'</h1>';
 	block += '<p class="category">'+maintype+'</p>';
@@ -97,4 +85,17 @@ function renderCourse(title,type,element,framework,id) {
 	block += '</li>'
 	$("#"+element).append(block);
 
+}
+
+function addEssentials(element){
+  $( document ).ready(function() {
+    $.getJSON( "../data/essentials.json", function( data ) {
+        for(i=0;i<data.length;i++) {
+        	number = i+1;
+        	course = data[i];
+        	title = number + ": " + course.title;
+        	renderCourse(title,"essentials",element,"",course._id,"https://www.europeandataportal.eu/elearning/en/" + course._id);
+        }
+    });
+  });
 }
