@@ -53,7 +53,7 @@ function processListeners() {
 }
 
 function addCourses() {
-	renderCourse('Open Data in a day','classroom','all_courses','explorer','odd');
+	renderCourse('Open data in a day','classroom','all_courses','explorer','odd');
 	renderCourse('Practical data management','classroom','all_courses','practitioner','odm');
 	renderCourse('Open data publication','classroom','all_courses','practitioner','odpub');
  	renderCourse('Visualising open data','classroom','all_courses','practitioner','odv'); 
