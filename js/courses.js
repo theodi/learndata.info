@@ -1,16 +1,12 @@
 function getInstances(courses) {
         var instances;
-        console.log("In here");
         $.getJSON( "https://odi-courses-data.herokuapp.com/query.php", function( data ) {
              instances = data.results;
              $("#courses").html("");
-             console.log(courses);
-             console.log(instances);
              processCoursesFlat(courses,instances);
         })
         .error(function() {
                 $.getJSON( "http://contentapi.theodi.org/with_tag.json?type=course_instance", function( data ) {
-                        console.log("error");
                         instances = data.results;
                         $("#courses").html("");
                         processCoursesFlat(courses,instances);
