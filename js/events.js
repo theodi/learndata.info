@@ -98,7 +98,7 @@ Date.prototype.format = function (mask) {
 function getCollection(collection,location,amount) {
     $.getJSON( "https://odi-courses-data.herokuapp.com/getCollection.php?collection="+collection, function( data ) {
              items = data.results;
-             for(i=0;i<amount;i++) {
+             for(i=0;i<4;i++) {
                 renderGenericItem(items[i],location);
              }
         })
@@ -275,6 +275,7 @@ function renderFooter(item,location) {
 }
 
 function renderItem(item,location) {
+    console.log(item);
     datetime = new Date(item.details.date);
     if (item.details.event_type == "event:lunchtime-lecture") {
         course = "blank";
