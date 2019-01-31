@@ -54,22 +54,22 @@ function processListeners() {
 
 function addCourses() {
 	renderCourse('Executives','courses_box_1','explorer','exec');
-	renderCourse('Data domain owners','courses_box_1','practitioner','ddo');
+	renderCourse('Enterprise data owner','courses_box_1','practitioner','ddo');
 	renderCourse('Data owners','courses_box_1','practitioner','do');
- 	renderCourse('Data stewards','courses_box_1','practitioner','ds'); 
-    renderCourse('Data custodians','courses_box_1','practitioner','dc');  
-  	renderCourse('Data users','courses_box_1','strategist','du');
+ 	renderCourse('Data steward','courses_box_1','practitioner','ds'); 
+    renderCourse('Technical data custodian','courses_box_1','practitioner','dc');  
+  	renderCourse('Data user','courses_box_1','strategist','du');
   	renderCourse('Data analysts','courses_box_1','strategist','da');
   	renderCourse('Data scientists','courses_box_1','strategist','dsci');
     renderCourse('Data innovators','courses_box_1','pioneer','di'); 
 
 
     renderCourse('Executives','courses_box_2','explorer','exec');
-	renderCourse('Data domain owners','courses_box_2','practitioner','ddo');
+	renderCourse('Enterprise data owner','courses_box_2','practitioner','ddo');
 	renderCourse('Data owners','courses_box_2','practitioner','do');
  	renderCourse('Data stewards','courses_box_2','practitioner','ds'); 
-    renderCourse('Data custodians','courses_box_2','practitioner','dc');  
-  	renderCourse('Data users','courses_box_2','strategist','du');
+    renderCourse('Techical data custodian','courses_box_2','practitioner','dc');  
+  	renderCourse('Data user','courses_box_2','strategist','du');
   	renderCourse('Data analysts','courses_box_2','strategist','da');
   	renderCourse('Data scientists','courses_box_2','strategist','dsci');
     renderCourse('Data innovators','courses_box_2','pioneer','di'); 
