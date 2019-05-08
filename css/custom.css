@@ -55,12 +55,30 @@
 	width: 25%;
 	float: left;
 }
+@media (max-width: 600px) {
+	.col-xs-12 {
+		width: 50%;
+		float: left;
+	}
+	.cool_fact_text > i {
+		font-size: 25px;
+		padding-bottom: 0px;
+	}
+	.cool_fact_text > h3 {
+		margin: 0px 0px 0px 0px;
+		padding-bottom: 2px;
+	}
+	.cool_fact_text > h5 {
+		margin: 0px 0px 0px 0px;
+	    font-size: 10px;
+	}
+	.cool_fact_text:after {
+    	border-right: 0px dashed #fff;
+    }
+}
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-section {
-    display: block;
 }
